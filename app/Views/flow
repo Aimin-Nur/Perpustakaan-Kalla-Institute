@@ -1,0 +1,65 @@
+
+                                                        FLOWCHART
+                    
+                    START --------- Anggota ----- REGISTER AKUN 
+                        |                               |
+                        V                               |
+                    [Login]---------------------------<-|
+                        |
+                        V
+                    [Validasi Login]----(Jika anggota)--> [Menu Anggota] --(Jika melihat katalog buku)--> [Tampilkan Katalog Buku]
+                        |           |       
+                        |           |----+--(Jika melihat ketersediaan buku)--> [Tampilkan Ketersediaan Buku]
+                        |           |      |
+                        |           |----+--(Jika ingin meminjam buku)--> [Pengajuan Peminjaman Buku]
+                        |                                         
+                        |    
+                    (Jika admin)                                      
+                        |                                         
+                        |                                        
+                        |
+                        V
+                    [Tampilkan Menu]
+                        |
+                        V
+                    [Menu Admin] 
+                        |
+                        V
+                    [Proses Admin] --(Tambah/Edit/Hapus Katalog)--> [Kelola Katalog Buku] Katalog Buku = Master Buku
+                        |
+                        +--(Menu Peminjaman)--> [Informasi Terkait Peminjaman Buku Mahasiswa]
+                        +--(Notifikasi Peminjaman Selesai)--> [Kirim Notifikasi]
+                        |
+                        V
+                    [Selesai]
+
+
+
+                                DFD
+                    +------------------------+
+                   |   Sistem Informasi     |
+                   |   Perpustakaan Kampus  |
+                   +------------+-----------+
+                                |
+         +----------------------|-----------------------+
+         |                      |                       |
+         V                      V                       V
+   +--------------+   +-------------------+      +----------------------+
+   |    Login     |   |     Menu Admin    |      |   Menu Anggota       |
+   +--------------+   +-------------------+      +----------------------+
+   | - Validasi   |   | - Dashboard       |      | - Tampil Katalog     |
+   |   Login      |   | - Master Buku :   |      | - Tampil Ketersediaan|
+   +--------------+   | - Tambah, Edit,   |      | - Edit profil        |
+                      |   hapus data buku |      | - Pengajuan Pinjaman |
+                      | - CRUD Rak        |      +----------------------+
+                      | - CRUD Kategori   | 
+                      | - CRUD Prodi      |
+                      | - CRUD Penerbit   |
+                      | - CRUD Penulis    |
+                      | - Informasi       |
+                      |   Peminjaman buku |
+                      | - Infromasi Denda |
+                      | - Notif deadline  |        
+                      |                   |             
+                      +-------------------+
+
